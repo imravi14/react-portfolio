@@ -2,7 +2,9 @@
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
   --bg-color: rgb(40, 47, 97);
 }
-
+h1 {
+  text-align: center;
+}
 body {
   background-color: rgb(11, 26, 51);
   color: white;
@@ -19,7 +21,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav_bar .nav_items {
@@ -32,9 +33,15 @@ a {
   border-bottom: 3px solid yellow;
 }
 
-
+@media (max-width: 768px) {
+  .nav_bar .right {
+    position: absolute;
+    left: 23rem;
+  }
+}
 /* Home Section */
 
+/* Default styles (for larger screens) */
 .home {
   height: 80vh;
   display: flex;
@@ -56,9 +63,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: yellow; */
-  /* height: 350px;
-  width: 350px; */
 }
 
 .home .right .img img {
@@ -69,6 +73,39 @@ a {
   animation-name: superman;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+
+/* Responsive styles (for smaller screens) */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: row;
+    height: auto;
+    margin: 2rem 0px;
+  }
+
+  .home .left {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .home .right .img img {
+    height: 250px;
+    width: 250px;
+    margin-left: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home .left {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .home .right .img img {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 @keyframes superman {
@@ -150,16 +187,86 @@ a {
 .skills .items .item img {
   width: 70px;
 }
+/* projects */
+
+/* Default styles (for larger screens) */
+.container.projects {
+  margin: 3rem auto;
+}
+
+.projects h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects .card {
+  width: 18rem;
+  border: 1px solid yellow;
+  box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+.projects .card .img img {
+  width: 250px;
+  height: 200px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+
+.projects .card-body {
+  text-align: center;
+}
+
+/* Responsive styles (for smaller screens) */
+@media (max-width: 768px) {
+  #projects h1 {
+    text-align: center;
+    margin: 10px 23rem;
+  }
+  .projects .card {
+    width: 15rem;
+  }
+  .card {
+    margin: 10px 16rem;
+  }
+  .projects .card .img img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .projects .btn {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects .card {
+    width: 100%;
+  }
+
+  .projects .card .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
 
 /* Contact */
 
+/* Default styles (for larger screens) */
 .contact-icon {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-
+#contact {
+  margin-top: 2rem;
+}
 .contact-icon .items {
   background-color: black;
   margin: 10px;
@@ -179,4 +286,46 @@ a {
 
 .contact-icon .items .icons {
   font-size: 2rem;
+}
+.footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3rem;
+}
+/* Responsive styles (for smaller screens) */
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  .footer {
+    margin-bottom: 5rem;
+  }
+  .contact-icon {
+    height: auto;
+    flex-direction: row;
+    margin: 2rem;
+  }
+  #contact {
+    text-align: center;
+    margin: 20px 15rem;
+  }
+  .contact-icon .items {
+    height: 60px;
+    width: 60px;
+  }
+
+  .contact-icon .items .icons {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-icon .items {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact-icon .items .icons {
+    font-size: 1.6rem;
+  }
 }

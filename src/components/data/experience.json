@@ -1,41 +1,42 @@
 [
   {
     "id": 1,
-    "role": "Senior Software Development Engineer SDE - II",
+    "role": "Experience:- Front-End",
     "organisation": "Google",
     "startDate": "Sept, 2023",
     "endDate": "Present",
-    "location": "CA,United State",
+    "location": "Gurgaon",
     "experiences": [
-      "Worked on Google Gmail",
-      "Worked with the Google Bard Team"
+      " Experienced in Frontend developer with a solid understanding of HTML, CSS, and JavaScript, along with hands-on experience in creating responsive and interactive web applications using React.js. "
+      
     ],
     "imageSrc": "company/google.png"
   },
   {
-    "id": 2,
-    "role": "Software Development Engineer SDE - I",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
+    "id": 1,
+    "role": "Experience:- Back-End",
+    "organisation": "Google",
+    "startDate": "Sept, 2023",
+    "endDate": "Present",
+    "location": "Gurgaon",
     "experiences": [
-      "Worked on Windows 10 terminal",
-      "Worked on Window 11 Upcoming features"
+      " Experienced in MERN stack development (MongoDB, Express.js, React.js, Node.js) with a strong foundation in building full-stack web applications, including developing RESTful APIs, implementing user authentication, and creating responsive, dynamic user interfaces. "
+      
     ],
-    "imageSrc": "company/microsoft.png"
+    "imageSrc": "company/google.png"
   },
   {
-    "id": 3,
-    "role": "Software Development Engineer - Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2021",
-    "endDate": "Jun, 2022",
-    "location": "Bengluru, India",
+    "id": 1,
+    "role": "Experience:- Full-Stack",
+    "organisation": "Google",
+    "startDate": "Sept, 2023",
+    "endDate": "Present",
+    "location": "Gurgaon",
     "experiences": [
-      "Worked on Nextflix payment system",
-      "Helped to create UI for video player"
+      " Aspiring MERN full stack developer with a strong foundation in MongoDB, Express.js, React.js, and Node.js. Passionate about building responsive and dynamic web applications, developing RESTful APIs, and implementing user authentication."
+      
     ],
-    "imageSrc": "company/netflix.png"
+    "imageSrc": "company/google.png"
   }
+  
 ]

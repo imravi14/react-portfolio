@@ -39,6 +39,11 @@ const Contact = () => {
             <SiGmail className="icons" />
           </a>
         </div>
+        <div className="footer">
+          <h2>Contect :- +91-9672011868</h2>
+          <h3>Email : - prajapatravi331@gmail.com</h3>
+          <h4>Addres :- Gurgaon,Rajiv-nagar</h4>
+        </div>
       </div>
     </>
   );
